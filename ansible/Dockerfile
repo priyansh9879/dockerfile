@@ -6,7 +6,7 @@ RUN mkdir -p /var/run/sshd
 
 RUN yum install vim wget curl net-tools --nogpgcheck -y && yum install ansible --nogpgcheck -y && yum install openssh-server openssh-clients --nogpgcheck -y && ssh-keygen -A
 
-COPY sshd_config /etc/ssh/sshd_config
+COPY . /etc/ssh/sshd_config
 
 RUN echo "root:redhat" | chpasswd
 
