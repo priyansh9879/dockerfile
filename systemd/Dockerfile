@@ -1,4 +1,4 @@
-FROM centos:8
+FROM fedora:latest
 
 MAINTAINER "priyansh9879" <priyanshmagotra444@outlook.com>
 
