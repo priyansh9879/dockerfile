@@ -4,9 +4,9 @@ MAINTAINER "priyansh9879" <priyanshmagotra444@outlook.com>
 
 RUN mkdir -p /var/run/sshd
 
-RUN yum install vim wget curl net-tools --nogpgcheck -y && yum install ansible --nogpgcheck -y && yum install openssh-server openssh-clients --nogpgcheck -y && ssh-keygen -A
+RUN yum install vim wget curl net-tools ansible openssh-server openssh-clients --nogpgcheck -y && ssh-keygen -A
 
-COPY . /etc/ssh/sshd_config
+RUN wget https://raw.githubusercontent.com/priyansh9879/dockerfile/master/ansible/sshd_config -O /etc/ssh/sshd_config 
 
 RUN echo "root:redhat" | chpasswd
 
