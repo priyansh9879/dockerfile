@@ -1,4 +1,4 @@
-FROM priyansh9879/centos-systemd:8
+FROM priyanshmagotra/fedora-systemd
 
 ENV container docker
 

@@ -1,4 +1,4 @@
-FROM priyansh9879/centos-systemd:8
+FROM priyanshmagotra/fedora-systemd
 
 MAINTAINER "priyansh9879" <priyanshmagotra444@outlook.com>
 
